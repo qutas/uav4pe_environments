@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Status1
         - /Odometry1/Shape1
+        - /Odometry2
         - /Odometry2/Shape1
       Splitter Ratio: 0.5
     Tree Height: 351
@@ -190,7 +191,7 @@ Visualization Manager:
       Shape:
         Alpha: 1
         Axes Length: 0.10000000149011612
-        Axes Radius: 0.10000000149011612
+        Axes Radius: 0.009999999776482582
         Color: 255; 25; 0
         Head Length: 0.30000001192092896
         Head Radius: 0.10000000149011612
@@ -236,6 +237,68 @@ Visualization Manager:
       Transport Hint: compressed
       Unreliable: false
       Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        aruco_0:
+          Value: true
+        base_link:
+          Value: true
+        base_link_frd:
+          Value: true
+        camera:
+          Value: true
+        emulated_uav:
+          Value: true
+        hbv_1615_link:
+          Value: true
+        home:
+          Value: true
+        local_origin:
+          Value: true
+        map:
+          Value: true
+        map_ned:
+          Value: true
+        odom:
+          Value: true
+        odom_ned:
+          Value: true
+        world:
+          Value: true
+      Marker Alpha: 1
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        base_link:
+          base_link_frd:
+            {}
+          hbv_1615_link:
+            {}
+        odom:
+          odom_ned:
+            {}
+        world:
+          map:
+            emulated_uav:
+              camera:
+                aruco_0:
+                  {}
+            home:
+              {}
+            local_origin:
+              {}
+            map_ned:
+              {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -264,7 +327,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 7.308786392211914
+      Distance: 5.803170204162598
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -272,17 +335,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -0.5474560856819153
-        Y: -0.2592984139919281
-        Z: -0.27560657262802124
+        X: 0.7128166556358337
+        Y: 0.12984764575958252
+        Z: 0.19538885354995728
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7547966241836548
+      Pitch: 0.9147964715957642
       Target Frame: <Fixed Frame>
-      Yaw: 3.705397844314575
+      Yaw: 3.1454005241394043
     Saved: ~
 Window Geometry:
   Displays:
@@ -303,4 +366,4 @@ Window Geometry:
     collapsed: false
   Width: 1180
   X: 0
-  Y: 19
+  Y: 0
