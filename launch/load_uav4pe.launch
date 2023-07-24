@@ -2,7 +2,7 @@
 <launch>
   <!-- Flags -->
   <!-- <arg name="use_stereo_simulation" default="false"/> -->
-  <arg name="world" default="dvp"/>
+  <arg name="world" default="o134"/>
   <arg name="rviz" default="true"/>
   <arg name="hil_fcu" default="false"/>
   <arg if="$(arg hil_fcu)" name="hitl_suffix" default="_hitl"/>
